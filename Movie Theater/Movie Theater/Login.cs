@@ -22,14 +22,6 @@ namespace Movie_Theater
         public Login()
         {
             InitializeComponent();
-
-            SetDBConnection(DbServerHost, DbUsername, DbUuserPassword, DbName);
-        }
-        private void SetDBConnection(string serverAddress, string username, string passwd, string dbName)
-        {
-            string connectionString = "Host=" + serverAddress + "; Username=" + username + "; Password=" + passwd + "; Database=" + dbName + ";";
-
-            dbConnection = new NpgsqlConnection(connectionString);
         }
 
         private NpgsqlConnection CreateDBConnection(string serverAddress, string username, string passwd, string dbName)
@@ -87,11 +79,19 @@ namespace Movie_Theater
                     }
                 }
             }
+
+            dbConnection1.Close();
         }
 
         private void createButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
+            CreateAccount createAccount = new CreateAccount();
+
+            createAccount.Show();
+
+            
         }
 
         private void managerButton_Click(object sender, EventArgs e)
