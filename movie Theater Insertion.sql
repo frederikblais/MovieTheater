@@ -71,3 +71,4 @@ INSERT INTO user_account VALUES
 INSERT INTO e_ticket VALUES
                             ('700123', '11/3/2020 9:35', '311', '10002'),
                             ('700124', '11/4/2020 14:03', '310', '10002');
+

@@ -22,17 +22,7 @@ namespace Movie_Theater
         public Form1()
         {
             InitializeComponent();
-
-            SetDBConnection(DbServerHost, DbUsername, DbUuserPassword, DbName);
-
-            checkPostgresVersion();        
-        }
-
-        private void SetDBConnection(string serverAddress, string username, string passwd, string dbName)
-        {
-            string connectionString = "Host=" + serverAddress + "; Username=" + username + "; Password=" + passwd + "; Database=" + dbName + ";";
-
-            dbConnection = new NpgsqlConnection(connectionString);
+       
         }
 
         private NpgsqlConnection CreateDBConnection(string serverAddress, string username, string passwd, string dbName)
@@ -44,27 +34,14 @@ namespace Movie_Theater
             return dbConnection;
         }
 
-        private void checkPostgresVersion()
+
+        private void LogoutButton_Click(object sender, EventArgs e)
         {
-            //Before sending commands to the database, the connection must be opened
-            dbConnection.Open();
+            Login login = new Login();
 
-            //This is a string representing the SQL query to execute in the db
-            string sqlQuery = "SELECT version()";
+            login.Show();
 
-
-            //This is the actual SQL containing the query to be executed
-            NpgsqlCommand dbCommand = new NpgsqlCommand(sqlQuery, dbConnection);
-
-            //This variable stores the result of the SQL query sent to the db
-            string postgresVersion = dbCommand.ExecuteScalar().ToString();
-
-            //After executing the query(ies) in the db, the connection must be closed
-            dbConnection.Close();
-
-            Console.WriteLine("\n----------------------");
-
-            Console.WriteLine("PostgreSQL version: " + postgresVersion);
+            this.Close();
         }
     }
 }
