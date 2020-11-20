@@ -15,7 +15,7 @@ namespace Movie_Theater
     {
         private const string DbServerHost = "localhost";
         private const string DbUsername = "postgres";
-        private const string DbUuserPassword = "1013";
+        private const string DbUuserPassword = "yvnft9k";
         private const string DbName = "movietheaterdb";
 
         NpgsqlConnection dbConnection;
@@ -43,14 +43,50 @@ namespace Movie_Theater
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            /*
-             * Code to validate creds goes here
-             */
+            // The following Connection, Command and DataReader objects will be used to access the jt_genre_movie table
+            NpgsqlConnection dbConnection1 = CreateDBConnection(DbServerHost, DbUsername, DbUuserPassword, DbName);
+            NpgsqlCommand dbCommand1;
+            NpgsqlDataReader dataReader1;
 
-            // Open the Client portal if logins are ok
-            Form1 f1 = new Form1();               // Instantiate a ManagerLogin object.
-            f1.Show();                            // Show ManagerLogin and
-            this.Hide();                          // closes the Login instance.
+            string username = usernameTextBox.Text;
+            string password= passwordTextBox.Text;
+            int usertype = 1;
+            dbConnection1.Open();
+
+            string sqlQuery = "select * from movietheaterdb.movietheaterschema.user_account;";
+            Console.WriteLine("SQL Query: " + sqlQuery);
+
+            //This is the actual SQL containing the query to be executed
+            dbCommand1 = new NpgsqlCommand(sqlQuery, dbConnection1);
+
+            dataReader1 = dbCommand1.ExecuteReader();
+
+            while (dataReader1.Read())
+            {
+                if (usertype == dataReader1.GetInt32(5))
+                {
+                    if(username == dataReader1.GetString(2))
+                    {
+                        if (password == dataReader1.GetString(3))
+                        {
+                            this.Hide();
+
+                            Form1 f1 = new Form1();
+                            f1.Show();
+                        }
+
+                        else
+                        {
+                            errorMessageLabel.Visible = true;
+                        }
+                    }
+
+                    else
+                    {
+                        errorMessageLabel.Visible = true;
+                    }
+                }
+            }
         }
 
         private void createButton_Click(object sender, EventArgs e)

@@ -54,8 +54,8 @@ INSERT INTO screening_room VALUES
 
 
 INSERT INTO showtime VALUES
-                            ('310', '11/25/2020', '105', 'SR3', '6.99'),
-                            ('311', '11/25/2020', '110', 'SR1', '8.99');
+                            ('310', '25/11/2020', '105', 'SR3', '6.99'),
+                            ('311', '25/11/2020', '110', 'SR1', '8.99');
 
 
 INSERT INTO user_account_type VALUES

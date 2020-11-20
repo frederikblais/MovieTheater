@@ -15,7 +15,7 @@ namespace Movie_Theater
     {
         private const string DbServerHost = "localhost";
         private const string DbUsername = "postgres";
-        private const string DbUuserPassword = "1013";
+        private const string DbUuserPassword = "yvnft9k";
         private const string DbName = "movietheaterdb";
 
         NpgsqlConnection dbConnection;
