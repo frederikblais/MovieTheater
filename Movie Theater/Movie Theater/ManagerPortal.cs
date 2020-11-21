@@ -11,7 +11,7 @@ using Npgsql;
 
 namespace Movie_Theater
 {
-    public partial class Form1 : Form
+    public partial class ManagerPortal : Form
     {
         private const string DbServerHost = "localhost";
         private const string DbUsername = "postgres";
@@ -19,7 +19,7 @@ namespace Movie_Theater
         private const string DbName = "movietheaterdb";
 
         NpgsqlConnection dbConnection;
-        public Form1()
+        public ManagerPortal()
         {
             InitializeComponent();
        

@@ -63,7 +63,7 @@ namespace Movie_Theater
                         {
                             this.Hide();
 
-                            Form1 f1 = new Form1();
+                            ManagerPortal f1 = new ManagerPortal();
                             f1.Show();
                         }
 
