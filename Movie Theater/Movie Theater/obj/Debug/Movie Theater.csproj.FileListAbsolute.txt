@@ -64,7 +64,6 @@ C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\
 C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie Theater.pdb
 C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.Login.resources
 C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.ManagerLogin.resources
-C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.Form1.resources
 C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\Movie Theater\Movie Theater\Movie Theater\bin\Debug\Movie Theater.exe.config
 C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\Movie Theater\Movie Theater\Movie Theater\bin\Debug\Movie Theater.exe
 C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\Movie Theater\Movie Theater\Movie Theater\bin\Debug\Movie Theater.pdb
@@ -136,3 +135,6 @@ C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\Movie Theatre\M
 C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\Movie Theatre\Movie Theater\Movie Theater\obj\Debug\Movie Theater.exe
 C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\Movie Theatre\Movie Theater\Movie Theater\obj\Debug\Movie Theater.pdb
 C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\Movie Theatre\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.CreateAccount.resources
+C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.ClientPortal.resources
+C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.CreateAccount.resources
+C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.ManagerPortal.resources

@@ -14,9 +14,9 @@ namespace Movie_Theater
     public partial class ManagerLogin : Form
     {
         private const string DbServerHost = "localhost";
-        private const string DbUsername = "postgres";
-        private const string DbUuserPassword = "1013";
-        private const string DbName = "movietheaterdb";
+        private const string DbUsername = "username";
+        private const string DbUuserPassword = "password";
+        private const string DbName = "movietheater_db";
 
         NpgsqlConnection dbConnection;
         public ManagerLogin()
@@ -44,7 +44,52 @@ namespace Movie_Theater
 
         private void loginManagerButton_Click(object sender, EventArgs e)
         {
+            // The following Connection, Command and DataReader objects will be used to access the jt_genre_movie table
+            NpgsqlConnection dbConnection1 = CreateDBConnection(DbServerHost, DbUsername, DbUuserPassword, DbName);
+            NpgsqlCommand dbCommand1;
+            NpgsqlDataReader dataReader1;
 
+            string username = usernameTextBox.Text;
+            string password = passwordTextBox.Text;
+            int usertype = 2;
+            dbConnection1.Open();
+
+            string sqlQuery = "select * from movietheater_db.movietheaterschema.user_account;";
+            Console.WriteLine("SQL Query: " + sqlQuery);
+
+            //This is the actual SQL containing the query to be executed
+            dbCommand1 = new NpgsqlCommand(sqlQuery, dbConnection1);
+
+            dataReader1 = dbCommand1.ExecuteReader();
+
+            while (dataReader1.Read())
+            {
+                if (usertype == dataReader1.GetInt32(5))
+                {
+                    if (username == dataReader1.GetString(2))
+                    {
+                        if (password == dataReader1.GetString(3))
+                        {
+                            this.Hide();
+
+                            ManagerPortal f1 = new ManagerPortal();
+                            f1.Show();
+                        }
+
+                        else
+                        {
+                            errorMessageLabel.Visible = true;
+                        }
+                    }
+
+                    else
+                    {
+                        errorMessageLabel.Visible = true;
+                    }
+                }
+            }
+
+            dbConnection1.Close();
         }
 
         private void createManagerButton_Click(object sender, EventArgs e)
@@ -54,7 +99,7 @@ namespace Movie_Theater
 
         private void closeManagerButton_Click(object sender, EventArgs e)
         {
-            Login log = new Login(); // Instantiate a ManagerLogin object.
+            Login log = new Login();               // Instantiate a ManagerLogin object.
             log.Show();                            // Show ManagerLogin and
             this.Close();                          // closes the Login instance.
         }

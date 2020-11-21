@@ -54,8 +54,8 @@ INSERT INTO screening_room VALUES
 
 
 INSERT INTO showtime VALUES
-                            ('310', '25/11/2020', '105', 'SR3', '6.99'),
-                            ('311', '25/11/2020', '110', 'SR1', '8.99');
+                            ('310', '2020-11-25', '105', 'SR3', '6.99'),
+                            ('311', '2020-11-25', '110', 'SR1', '8.99');
 
 
 INSERT INTO user_account_type VALUES
@@ -64,11 +64,11 @@ INSERT INTO user_account_type VALUES
 
 
 INSERT INTO user_account VALUES
-                                ('10001', 'Donald Biden', 'dbiden', '=abc123', 'dbident@mt.com', '2', '11/1/2020 8:30'),
-                                ('10002', 'Joe Obama', 'jobama', '=def456', 'jobama@example.mail', '1', '11/2/2020 8:30');
+                                ('10001', 'Donald Biden', 'dbiden', '=abc123', 'dbident@mt.com', '2', '2020-01-11 8:30'),
+                                ('10002', 'Joe Obama', 'jobama', '=def456', 'jobama@example.mail', '1', '2020-02-11 8:30');
 
 
 INSERT INTO e_ticket VALUES
-                            ('700123', '11/3/2020 9:35', '311', '10002'),
-                            ('700124', '11/4/2020 14:03', '310', '10002');
+                            ('700123', '2020-03-11 9:35', '311', '10002'),
+                            ('700124', '2020-04-11 14:03', '310', '10002');
 
