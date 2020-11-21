@@ -1,3 +1,7 @@
+create database movietheater_db;
+
+create schema movietheaterschema;
+
 CREATE TABLE Movie (
     MovieID integer not null,
     Title varchar(128) not null,
@@ -69,7 +73,3 @@ CREATE TABLE e_Ticket (
     CONSTRAINT Showtime_fk FOREIGN KEY (Showtime_ID) REFERENCES Showtime (ShowtimeID),
     CONSTRAINT UserID_fk FOREIGN KEY (User_Account_ID) REFERENCES User_Account (UserID)
 );
-
-create database movietheaterdb;
-
-create schema movietheaterschema;

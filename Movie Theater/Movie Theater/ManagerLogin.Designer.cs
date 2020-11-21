@@ -30,12 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.closeManagerButton = new System.Windows.Forms.Button();
-            this.createManagerButton = new System.Windows.Forms.Button();
             this.loginManagerButton = new System.Windows.Forms.Button();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.errorMessageLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +54,7 @@
             this.closeManagerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.closeManagerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeManagerButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.closeManagerButton.Location = new System.Drawing.Point(129, 295);
+            this.closeManagerButton.Location = new System.Drawing.Point(129, 236);
             this.closeManagerButton.Name = "closeManagerButton";
             this.closeManagerButton.Size = new System.Drawing.Size(95, 44);
             this.closeManagerButton.TabIndex = 8;
@@ -62,25 +62,12 @@
             this.closeManagerButton.UseVisualStyleBackColor = false;
             this.closeManagerButton.Click += new System.EventHandler(this.closeManagerButton_Click);
             // 
-            // createManagerButton
-            // 
-            this.createManagerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.createManagerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createManagerButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.createManagerButton.Location = new System.Drawing.Point(129, 228);
-            this.createManagerButton.Name = "createManagerButton";
-            this.createManagerButton.Size = new System.Drawing.Size(95, 44);
-            this.createManagerButton.TabIndex = 9;
-            this.createManagerButton.Text = "Create account";
-            this.createManagerButton.UseVisualStyleBackColor = false;
-            this.createManagerButton.Click += new System.EventHandler(this.createManagerButton_Click);
-            // 
             // loginManagerButton
             // 
             this.loginManagerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.loginManagerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginManagerButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.loginManagerButton.Location = new System.Drawing.Point(129, 164);
+            this.loginManagerButton.Location = new System.Drawing.Point(129, 166);
             this.loginManagerButton.Name = "loginManagerButton";
             this.loginManagerButton.Size = new System.Drawing.Size(95, 44);
             this.loginManagerButton.TabIndex = 10;
@@ -129,15 +116,27 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Username:";
             // 
+            // errorMessageLabel
+            // 
+            this.errorMessageLabel.AutoSize = true;
+            this.errorMessageLabel.ForeColor = System.Drawing.Color.Red;
+            this.errorMessageLabel.Location = new System.Drawing.Point(102, 52);
+            this.errorMessageLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.errorMessageLabel.Name = "errorMessageLabel";
+            this.errorMessageLabel.Size = new System.Drawing.Size(161, 13);
+            this.errorMessageLabel.TabIndex = 11;
+            this.errorMessageLabel.Text = "Incorrect Username or Password";
+            this.errorMessageLabel.Visible = false;
+            // 
             // ManagerLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(356, 362);
+            this.ClientSize = new System.Drawing.Size(352, 310);
             this.ControlBox = false;
+            this.Controls.Add(this.errorMessageLabel);
             this.Controls.Add(this.closeManagerButton);
-            this.Controls.Add(this.createManagerButton);
             this.Controls.Add(this.loginManagerButton);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.usernameTextBox);
@@ -149,6 +148,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ManagerLogin";
+            this.Opacity = 0.9D;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Theater";
@@ -161,11 +161,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button closeManagerButton;
-        private System.Windows.Forms.Button createManagerButton;
         private System.Windows.Forms.Button loginManagerButton;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.TextBox usernameTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label errorMessageLabel;
     }
 }
