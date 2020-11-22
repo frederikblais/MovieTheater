@@ -35,10 +35,10 @@
             this.lengthLabel = new System.Windows.Forms.Label();
             this.titleDisplayLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lengthDisplayLabel = new System.Windows.Forms.Label();
-            this.genreDisplayLabel = new System.Windows.Forms.Label();
-            this.movieLabel = new System.Windows.Forms.Label();
             this.buyTicketButton = new System.Windows.Forms.Button();
+            this.genreDisplayLabel = new System.Windows.Forms.Label();
+            this.lengthDisplayLabel = new System.Windows.Forms.Label();
+            this.movieLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.viewETicketButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
@@ -122,15 +122,16 @@
             this.panel1.Size = new System.Drawing.Size(174, 158);
             this.panel1.TabIndex = 8;
             // 
-            // lengthDisplayLabel
+            // buyTicketButton
             // 
-            this.lengthDisplayLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lengthDisplayLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lengthDisplayLabel.Location = new System.Drawing.Point(48, 59);
-            this.lengthDisplayLabel.Name = "lengthDisplayLabel";
-            this.lengthDisplayLabel.Size = new System.Drawing.Size(100, 23);
-            this.lengthDisplayLabel.TabIndex = 6;
-            this.lengthDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buyTicketButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buyTicketButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buyTicketButton.Location = new System.Drawing.Point(48, 101);
+            this.buyTicketButton.Name = "buyTicketButton";
+            this.buyTicketButton.Size = new System.Drawing.Size(75, 30);
+            this.buyTicketButton.TabIndex = 8;
+            this.buyTicketButton.Text = "Buy Ticket";
+            this.buyTicketButton.UseVisualStyleBackColor = false;
             // 
             // genreDisplayLabel
             // 
@@ -142,6 +143,16 @@
             this.genreDisplayLabel.TabIndex = 7;
             this.genreDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // lengthDisplayLabel
+            // 
+            this.lengthDisplayLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lengthDisplayLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lengthDisplayLabel.Location = new System.Drawing.Point(48, 59);
+            this.lengthDisplayLabel.Name = "lengthDisplayLabel";
+            this.lengthDisplayLabel.Size = new System.Drawing.Size(100, 23);
+            this.lengthDisplayLabel.TabIndex = 6;
+            this.lengthDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // movieLabel
             // 
             this.movieLabel.AutoSize = true;
@@ -152,17 +163,6 @@
             this.movieLabel.Size = new System.Drawing.Size(66, 24);
             this.movieLabel.TabIndex = 9;
             this.movieLabel.Text = "Movie";
-            // 
-            // buyTicketButton
-            // 
-            this.buyTicketButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buyTicketButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buyTicketButton.Location = new System.Drawing.Point(48, 101);
-            this.buyTicketButton.Name = "buyTicketButton";
-            this.buyTicketButton.Size = new System.Drawing.Size(75, 30);
-            this.buyTicketButton.TabIndex = 8;
-            this.buyTicketButton.Text = "Buy Ticket";
-            this.buyTicketButton.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -208,6 +208,7 @@
             this.Controls.Add(this.showtimeLabel);
             this.Controls.Add(this.movieShowtimeListBox);
             this.Name = "ClientPortal";
+            this.Opacity = 0.9D;
             this.Text = "ClientPortal";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

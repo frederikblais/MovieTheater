@@ -11,9 +11,8 @@ using Npgsql;
 
 namespace Movie_Theater
 {
-    public partial class CreateAccount : Form
+    public partial class CreateManager : Form
     {
-
         private const string DbServerHost = "localhost";
         //private const string DbUsername = "postgres";
         private const string DbUsername = "username";
@@ -25,7 +24,7 @@ namespace Movie_Theater
 
         NpgsqlConnection dbConnection;
 
-        public CreateAccount()
+        public CreateManager()
         {
             InitializeComponent();
 
@@ -48,15 +47,13 @@ namespace Movie_Theater
             return dbConnection;
         }
 
-        private void CancelButton_Click(object sender, EventArgs e)
+        private void cancelButton_Click(object sender, EventArgs e)
         {
+            ManagerPortal portal = new ManagerPortal();
 
-            Login login = new Login();
-
-            login.Show();
+            portal.Show();
 
             this.Close();
-
         }
 
         private void createAccount()
@@ -98,18 +95,13 @@ namespace Movie_Theater
 
             biggestNumber++;
 
-            Console.WriteLine("Added one: "+biggestNumber);
-
-            //dbConnection2.Open();
+            Console.WriteLine("Added one: " + biggestNumber);
 
             // Get the current date.
-            DateTime thisDay = DateTime.Today;
-
-            string dateformat = thisDay.ToString("dd/MM/yyyy H:mm");
-            //string dateformat = thisDay.ToString("yyyy-mm-dd H:mm");
+            string dateformat = DateTime.Now.ToString("yyyy-MM-dd h:mm");
 
 
-            if (string.IsNullOrEmpty(nameTextBox.Text)|| string.IsNullOrEmpty(usernameTextBox.Text)|| string.IsNullOrEmpty(emailTextBox.Text)|| string.IsNullOrEmpty(passwordTextBox.Text))
+            if (string.IsNullOrEmpty(nameTextBox.Text) || string.IsNullOrEmpty(usernameTextBox.Text) || string.IsNullOrEmpty(emailTextBox.Text) || string.IsNullOrEmpty(passwordTextBox.Text))
             {
                 errorMessageLabel.Visible = true;
                 errorlabel1.Visible = true;
@@ -121,7 +113,7 @@ namespace Movie_Theater
             else
             {
                 string sqlQuery2 = "INSERT INTO movietheater_db.movietheaterschema.user_account VALUES ('" + biggestNumber + "', '" + nameTextBox.Text + "', '" + usernameTextBox.Text + "', '" +
-                passwordTextBox.Text + "', '" + emailTextBox.Text + "', '1', '" + dateformat + "'" + ");";
+                passwordTextBox.Text + "', '" + emailTextBox.Text + "', '2', '" + dateformat + "'" + ");";
 
                 Console.WriteLine("SQL Query: " + sqlQuery2);
 
@@ -136,16 +128,16 @@ namespace Movie_Theater
 
                 this.Close();
 
-                Login login = new Login();
+                ManagerPortal portal = new ManagerPortal();
 
-                login.Show();
+                portal.Show();
             }
 
 
 
         }
 
-        private void CreateButton_Click(object sender, EventArgs e)
+        private void createButton_Click_1(object sender, EventArgs e)
         {
             createAccount();
         }

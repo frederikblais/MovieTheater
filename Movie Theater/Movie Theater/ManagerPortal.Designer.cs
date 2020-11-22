@@ -86,6 +86,7 @@
             this.lengthLabel = new System.Windows.Forms.Label();
             this.lengthTextBox = new System.Windows.Forms.TextBox();
             this.movieLabel = new System.Windows.Forms.Label();
+            this.addButton = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -226,7 +227,7 @@
             this.showtimeAddButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.showtimeAddButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showtimeAddButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.showtimeAddButton.Location = new System.Drawing.Point(268, 153);
+            this.showtimeAddButton.Location = new System.Drawing.Point(299, 145);
             this.showtimeAddButton.Name = "showtimeAddButton";
             this.showtimeAddButton.Size = new System.Drawing.Size(41, 33);
             this.showtimeAddButton.TabIndex = 95;
@@ -238,7 +239,7 @@
             this.showtimeEditButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.showtimeEditButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showtimeEditButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.showtimeEditButton.Location = new System.Drawing.Point(162, 153);
+            this.showtimeEditButton.Location = new System.Drawing.Point(193, 145);
             this.showtimeEditButton.Name = "showtimeEditButton";
             this.showtimeEditButton.Size = new System.Drawing.Size(40, 33);
             this.showtimeEditButton.TabIndex = 94;
@@ -250,7 +251,7 @@
             this.showtimeDeleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.showtimeDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showtimeDeleteButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.showtimeDeleteButton.Location = new System.Drawing.Point(208, 153);
+            this.showtimeDeleteButton.Location = new System.Drawing.Point(239, 145);
             this.showtimeDeleteButton.Name = "showtimeDeleteButton";
             this.showtimeDeleteButton.Size = new System.Drawing.Size(54, 33);
             this.showtimeDeleteButton.TabIndex = 96;
@@ -261,7 +262,7 @@
             // 
             this.ticketPriceTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ticketPriceTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ticketPriceTextBox.Location = new System.Drawing.Point(199, 115);
+            this.ticketPriceTextBox.Location = new System.Drawing.Point(240, 115);
             this.ticketPriceTextBox.Name = "ticketPriceTextBox";
             this.ticketPriceTextBox.Size = new System.Drawing.Size(100, 20);
             this.ticketPriceTextBox.TabIndex = 93;
@@ -300,7 +301,7 @@
             // 
             this.showtimeIDTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.showtimeIDTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.showtimeIDTextBox.Location = new System.Drawing.Point(202, 9);
+            this.showtimeIDTextBox.Location = new System.Drawing.Point(239, 5);
             this.showtimeIDTextBox.Name = "showtimeIDTextBox";
             this.showtimeIDTextBox.Size = new System.Drawing.Size(100, 20);
             this.showtimeIDTextBox.TabIndex = 79;
@@ -331,16 +332,16 @@
             // 
             this.showtimeMovieIDTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.showtimeMovieIDTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.showtimeMovieIDTextBox.Location = new System.Drawing.Point(185, 61);
+            this.showtimeMovieIDTextBox.Location = new System.Drawing.Point(240, 61);
             this.showtimeMovieIDTextBox.Name = "showtimeMovieIDTextBox";
             this.showtimeMovieIDTextBox.Size = new System.Drawing.Size(100, 20);
-            this.showtimeMovieIDTextBox.TabIndex = 76;
+            this.showtimeMovieIDTextBox.TabIndex = 97;
             // 
             // dateTimeTextBox
             // 
             this.dateTimeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dateTimeTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dateTimeTextBox.Location = new System.Drawing.Point(191, 34);
+            this.dateTimeTextBox.Location = new System.Drawing.Point(239, 34);
             this.dateTimeTextBox.Name = "dateTimeTextBox";
             this.dateTimeTextBox.Size = new System.Drawing.Size(100, 20);
             this.dateTimeTextBox.TabIndex = 75;
@@ -411,9 +412,9 @@
             // 
             this.screeningRoomCodeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.screeningRoomCodeTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.screeningRoomCodeTextBox.Location = new System.Drawing.Point(167, 7);
+            this.screeningRoomCodeTextBox.Location = new System.Drawing.Point(202, 7);
             this.screeningRoomCodeTextBox.Name = "screeningRoomCodeTextBox";
-            this.screeningRoomCodeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.screeningRoomCodeTextBox.Size = new System.Drawing.Size(111, 20);
             this.screeningRoomCodeTextBox.TabIndex = 90;
             // 
             // screeningRoomCodeLabel
@@ -431,9 +432,9 @@
             // 
             this.capacityTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.capacityTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.capacityTextBox.Location = new System.Drawing.Point(183, 32);
+            this.capacityTextBox.Location = new System.Drawing.Point(202, 32);
             this.capacityTextBox.Name = "capacityTextBox";
-            this.capacityTextBox.Size = new System.Drawing.Size(100, 20);
+            this.capacityTextBox.Size = new System.Drawing.Size(111, 20);
             this.capacityTextBox.TabIndex = 83;
             // 
             // ScreeningRoomDescriptionLabel
@@ -486,9 +487,9 @@
             // 
             this.descriptionTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.descriptionTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.descriptionTextBox.Location = new System.Drawing.Point(195, 58);
+            this.descriptionTextBox.Location = new System.Drawing.Point(202, 58);
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(99, 20);
+            this.descriptionTextBox.Size = new System.Drawing.Size(111, 20);
             this.descriptionTextBox.TabIndex = 85;
             // 
             // addScreeningRoomButton
@@ -568,7 +569,7 @@
             this.movieIDTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.movieIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movieIDTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.movieIDTextBox.Location = new System.Drawing.Point(225, 10);
+            this.movieIDTextBox.Location = new System.Drawing.Point(248, 13);
             this.movieIDTextBox.Name = "movieIDTextBox";
             this.movieIDTextBox.Size = new System.Drawing.Size(100, 20);
             this.movieIDTextBox.TabIndex = 90;
@@ -590,7 +591,7 @@
             this.genreComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.genreComboBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.genreComboBox.FormattingEnabled = true;
-            this.genreComboBox.Location = new System.Drawing.Point(211, 36);
+            this.genreComboBox.Location = new System.Drawing.Point(248, 36);
             this.genreComboBox.Name = "genreComboBox";
             this.genreComboBox.Size = new System.Drawing.Size(100, 21);
             this.genreComboBox.TabIndex = 77;
@@ -623,7 +624,7 @@
             this.imageFilePathTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.imageFilePathTextBox.Location = new System.Drawing.Point(254, 166);
             this.imageFilePathTextBox.Name = "imageFilePathTextBox";
-            this.imageFilePathTextBox.Size = new System.Drawing.Size(100, 20);
+            this.imageFilePathTextBox.Size = new System.Drawing.Size(94, 20);
             this.imageFilePathTextBox.TabIndex = 88;
             // 
             // movieRatingLabel
@@ -653,7 +654,7 @@
             this.titleTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.titleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.titleTextBox.Location = new System.Drawing.Point(201, 62);
+            this.titleTextBox.Location = new System.Drawing.Point(248, 62);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(100, 20);
             this.titleTextBox.TabIndex = 84;
@@ -663,7 +664,7 @@
             this.audienceRatingTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.audienceRatingTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.audienceRatingTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.audienceRatingTextBox.Location = new System.Drawing.Point(212, 140);
+            this.audienceRatingTextBox.Location = new System.Drawing.Point(248, 140);
             this.audienceRatingTextBox.Name = "audienceRatingTextBox";
             this.audienceRatingTextBox.Size = new System.Drawing.Size(100, 20);
             this.audienceRatingTextBox.TabIndex = 87;
@@ -696,7 +697,7 @@
             this.yearTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.yearTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yearTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.yearTextBox.Location = new System.Drawing.Point(203, 88);
+            this.yearTextBox.Location = new System.Drawing.Point(248, 88);
             this.yearTextBox.Name = "yearTextBox";
             this.yearTextBox.Size = new System.Drawing.Size(100, 20);
             this.yearTextBox.TabIndex = 85;
@@ -728,7 +729,7 @@
             this.lengthTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lengthTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lengthTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lengthTextBox.Location = new System.Drawing.Point(214, 114);
+            this.lengthTextBox.Location = new System.Drawing.Point(248, 114);
             this.lengthTextBox.Name = "lengthTextBox";
             this.lengthTextBox.Size = new System.Drawing.Size(100, 20);
             this.lengthTextBox.TabIndex = 86;
@@ -744,12 +745,25 @@
             this.movieLabel.TabIndex = 102;
             this.movieLabel.Text = "Movie";
             // 
+            // addButton
+            // 
+            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.addButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.addButton.Location = new System.Drawing.Point(631, 465);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(80, 41);
+            this.addButton.TabIndex = 113;
+            this.addButton.Text = "Add Manager";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
             // ManagerPortal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(756, 608);
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.clientLabel);
@@ -764,6 +778,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ManagerPortal";
+            this.Opacity = 0.9D;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manager Portal";
@@ -841,6 +856,7 @@
         private System.Windows.Forms.Label lengthLabel;
         private System.Windows.Forms.TextBox lengthTextBox;
         private System.Windows.Forms.Label movieLabel;
+        private System.Windows.Forms.Button addButton;
     }
 }
 

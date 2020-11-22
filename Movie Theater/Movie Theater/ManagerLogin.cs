@@ -14,12 +14,13 @@ namespace Movie_Theater
     public partial class ManagerLogin : Form
     {
         private const string DbServerHost = "localhost";
-        //private const string DbUsername = "username";
-        private const string DbUsername = "postgres";
-        //private const string DbUuserPassword = "password";
-        private const string DbUuserPassword = "1013";
-        //private const string DbName = "movietheater_db";
-        private const string DbName = "movietheaterdb";
+        //private const string DbUsername = "postgres";
+        private const string DbUsername = "username";
+        //private const string DbUuserPassword = "yvnft9k";
+        //private const string DbUuserPassword = "1013";
+        private const string DbUuserPassword = "password";
+        //private const string DbName = "movietheaterdb";
+        private const string DbName = "movietheater_db";
 
         NpgsqlConnection dbConnection;
         public ManagerLogin()

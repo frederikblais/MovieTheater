@@ -144,3 +144,5 @@ C:\Users\le1770646\source\repos\MovieTheater\Movie Theater\Movie Theater\obj\Deb
 C:\Users\le1770646\source\repos\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.ManagerPortal.resources
 C:\Users\le1770646\source\repos\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.Login.resources
 C:\Users\le1770646\source\repos\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.ManagerLogin.resources
+C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\bin\Debug\Movie Theater.xml
+C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.CreateManager.resources
