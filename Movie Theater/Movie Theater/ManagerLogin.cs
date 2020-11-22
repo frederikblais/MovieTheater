@@ -14,9 +14,12 @@ namespace Movie_Theater
     public partial class ManagerLogin : Form
     {
         private const string DbServerHost = "localhost";
-        private const string DbUsername = "username";
-        private const string DbUuserPassword = "password";
-        private const string DbName = "movietheater_db";
+        //private const string DbUsername = "username";
+        private const string DbUsername = "postgres";
+        //private const string DbUuserPassword = "password";
+        private const string DbUuserPassword = "1013";
+        //private const string DbName = "movietheater_db";
+        private const string DbName = "movietheaterdb";
 
         NpgsqlConnection dbConnection;
         public ManagerLogin()
@@ -54,7 +57,7 @@ namespace Movie_Theater
             int usertype = 2;
             dbConnection1.Open();
 
-            string sqlQuery = "select * from movietheater_db.movietheaterschema.user_account;";
+            string sqlQuery = "select * from movietheaterschema.user_account;";
             Console.WriteLine("SQL Query: " + sqlQuery);
 
             //This is the actual SQL containing the query to be executed

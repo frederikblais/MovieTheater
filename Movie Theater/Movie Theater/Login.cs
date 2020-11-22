@@ -15,13 +15,25 @@ namespace Movie_Theater
     {
         private const string DbServerHost = "localhost";
         private const string DbUsername = "postgres";
-        private const string DbUuserPassword = "yvnft9k";
+        //private const string DbUsername = "username";
+        //private const string DbUuserPassword = "yvnft9k";
+        private const string DbUuserPassword = "1013";
+        //private const string DbUuserPassword = "password";
+        //private const string DbName = "movietheater_db";
         private const string DbName = "movietheaterdb";
 
         NpgsqlConnection dbConnection;
         public Login()
         {
             InitializeComponent();
+
+            SetDBConnection(DbServerHost, DbUsername, DbUuserPassword, DbName);
+        }
+        private void SetDBConnection(string serverAddress, string username, string passwd, string dbName)
+        {
+            string connectionString = "Host=" + serverAddress + "; Username=" + username + "; Password=" + passwd + "; Database=" + dbName + ";";
+
+            dbConnection = new NpgsqlConnection(connectionString);
         }
 
         private NpgsqlConnection CreateDBConnection(string serverAddress, string username, string passwd, string dbName)
