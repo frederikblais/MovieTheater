@@ -16,20 +16,27 @@ namespace Movie_Theater
         private const string DbServerHost = "localhost";
         private const string DbUsername = "postgres";
         //private const string DbUsername = "username"
-        //private const string DbUuserPassword = "yvnft9k";
+        private const string DbUuserPassword = "yvnft9k";
         //private const string DbUuserPassword = "password";
-        private const string DbUuserPassword = "1013";
+        //private const string DbUuserPassword = "1013";
         //private const string DbName = "movietheater_db";
         private const string DbName = "movietheaterdb";
 
         NpgsqlConnection dbConnection;
 
         List<Showtime> foundShowtimeList = new List<Showtime>();
+        List<Movie> movies = new List<Movie>();
         public ClientPortal()
         {
             InitializeComponent();
 
             SetDBConnection(DbServerHost, DbUsername, DbUuserPassword, DbName);
+
+            //DisplayShowtimes();
+
+            GetShowtimesFromDB();
+
+            GetMoviesFromDB();
         }
 
         private void SetDBConnection(string serverAddress, string username, string passwd, string dbName)
@@ -66,7 +73,7 @@ namespace Movie_Theater
             dbConnection.Open();
 
             //This is a string representing the SQL query to execute in the db            
-            string sqlQuery = "SELECT * FROM movietheaterschema.showtime;";
+            string sqlQuery = "SELECT * FROM movietheaterdb.movietheaterschema.showtime;";
             Console.WriteLine("SQL Query: " + sqlQuery);
 
             //This is the actual SQL containing the query to be executed
@@ -87,6 +94,9 @@ namespace Movie_Theater
                 currentShowtime.TicketPrice = dataReader.GetDouble(4);
 
                 foundShowtimeList.Add(currentShowtime);
+
+                Console.WriteLine(currentShowtime.ID+"\n"+ currentShowtime.DateTime + "\n" + currentShowtime.MovieID + "\n" + currentShowtime.ScreeningRoomID
+                    + "\n" + currentShowtime.TicketPrice);
             }
 
             //After executing the query(ies) in the db, the connection must be closed
@@ -96,6 +106,69 @@ namespace Movie_Theater
             DisplayShowtimes();
 
             return foundShowtimeList;
+        }
+
+        private List<Showtime> GetMoviesFromDB()
+        {
+            Movie currentMovie;
+
+            // Before sending commands to the database, the connection must be opened
+            dbConnection.Open();
+
+            //This is a string representing the SQL query to execute in the db            
+            string sqlQuery = "SELECT * FROM movietheaterdb.movietheaterschema.movie;";
+            Console.WriteLine("SQL Query: " + sqlQuery);
+
+            //This is the actual SQL containing the query to be executed
+            NpgsqlCommand dbCommand = new NpgsqlCommand(sqlQuery, dbConnection);
+
+            //This variable stores the result of the SQL query sent to the db
+            NpgsqlDataReader dataReader = dbCommand.ExecuteReader();
+
+            //Read each line present in the dataReader
+            while (dataReader.Read())
+            {
+                currentMovie = new Movie();
+
+                currentMovie.ID = dataReader.GetInt32(0);
+                currentMovie.Title = dataReader.GetString(1);
+                currentMovie.Year = dataReader.GetInt32(2);
+                currentMovie.Length = dataReader.GetTimeSpan(3);
+                currentMovie.AudienceRating = dataReader.GetDouble(4);
+                currentMovie.ImageFilePath = dataReader.GetString(5);
+
+                movies.Add(currentMovie);
+
+                Console.WriteLine(currentMovie.ID + "\n" + currentMovie.Title + "\n" + currentMovie.Year + "\n" + currentMovie.AudienceRating
+                    + "\n" + currentMovie.ImageFilePath);
+            }
+
+            //After executing the query(ies) in the db, the connection must be closed
+            dbConnection.Close();
+
+            return foundShowtimeList;
+        }
+        private void LogoutButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MovieShowtimeListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                int index = movieShowtimeListBox.SelectedIndex;
+
+                int test = movies.FindIndex(a => a.ID == foundShowtimeList[index].MovieID);
+
+                titleDisplayLabel.Text = movies[test].Title;
+
+                lengthDisplayLabel.Text = movies[test].Length.ToString();
+            }
+
+            catch { }
         }
 
         /*private List<Genre> LoadShowtimeMovies(int movieID)
