@@ -45,17 +45,17 @@
             this.ticketPriceTextBox = new System.Windows.Forms.TextBox();
             this.ticketPriceLabel = new System.Windows.Forms.Label();
             this.showtimeListBox = new System.Windows.Forms.ListBox();
-            this.showtimeScreenRoomCodeID = new System.Windows.Forms.TextBox();
-            this.memberIDTextBox = new System.Windows.Forms.TextBox();
+            this.showtimeScreenRoomCodeIDTextBox = new System.Windows.Forms.TextBox();
+            this.showtimeIDTextBox = new System.Windows.Forms.TextBox();
             this.showtimeIDLabel = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.dobTextBox = new System.Windows.Forms.TextBox();
+            this.showtimeMovieIDTextBox = new System.Windows.Forms.TextBox();
             this.dateTimeTextBox = new System.Windows.Forms.TextBox();
             this.showtimeMovieIdLabel = new System.Windows.Forms.Label();
             this.dateTimeLabel = new System.Windows.Forms.Label();
             this.showtimeLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.screeningRoomPortal = new System.Windows.Forms.ListBox();
+            this.screeningRoomListBox = new System.Windows.Forms.ListBox();
             this.screeningRoomCodeTextBox = new System.Windows.Forms.TextBox();
             this.screeningRoomCodeLabel = new System.Windows.Forms.Label();
             this.capacityTextBox = new System.Windows.Forms.TextBox();
@@ -143,7 +143,7 @@
             this.panel4.Controls.Add(this.ticketSoldShowtimeListBox);
             this.panel4.Location = new System.Drawing.Point(15, 322);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(346, 272);
+            this.panel4.Size = new System.Drawing.Size(333, 272);
             this.panel4.TabIndex = 109;
             // 
             // ticketSoldMovieLabel
@@ -151,7 +151,7 @@
             this.ticketSoldMovieLabel.AutoSize = true;
             this.ticketSoldMovieLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ticketSoldMovieLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ticketSoldMovieLabel.Location = new System.Drawing.Point(187, 10);
+            this.ticketSoldMovieLabel.Location = new System.Drawing.Point(3, 141);
             this.ticketSoldMovieLabel.Name = "ticketSoldMovieLabel";
             this.ticketSoldMovieLabel.Size = new System.Drawing.Size(59, 13);
             this.ticketSoldMovieLabel.TabIndex = 3;
@@ -162,9 +162,9 @@
             this.ticketSoldMovieListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ticketSoldMovieListBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ticketSoldMovieListBox.FormattingEnabled = true;
-            this.ticketSoldMovieListBox.Location = new System.Drawing.Point(190, 26);
+            this.ticketSoldMovieListBox.Location = new System.Drawing.Point(6, 157);
             this.ticketSoldMovieListBox.Name = "ticketSoldMovieListBox";
-            this.ticketSoldMovieListBox.Size = new System.Drawing.Size(149, 238);
+            this.ticketSoldMovieListBox.Size = new System.Drawing.Size(318, 108);
             this.ticketSoldMovieListBox.TabIndex = 2;
             // 
             // ticketsSoldShowtimeLabel
@@ -183,9 +183,9 @@
             this.ticketSoldShowtimeListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ticketSoldShowtimeListBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ticketSoldShowtimeListBox.FormattingEnabled = true;
-            this.ticketSoldShowtimeListBox.Location = new System.Drawing.Point(3, 26);
+            this.ticketSoldShowtimeListBox.Location = new System.Drawing.Point(6, 26);
             this.ticketSoldShowtimeListBox.Name = "ticketSoldShowtimeListBox";
-            this.ticketSoldShowtimeListBox.Size = new System.Drawing.Size(120, 238);
+            this.ticketSoldShowtimeListBox.Size = new System.Drawing.Size(318, 108);
             this.ticketSoldShowtimeListBox.TabIndex = 0;
             // 
             // ticketsSoldLabel
@@ -208,11 +208,11 @@
             this.panel3.Controls.Add(this.ticketPriceTextBox);
             this.panel3.Controls.Add(this.ticketPriceLabel);
             this.panel3.Controls.Add(this.showtimeListBox);
-            this.panel3.Controls.Add(this.showtimeScreenRoomCodeID);
-            this.panel3.Controls.Add(this.memberIDTextBox);
+            this.panel3.Controls.Add(this.showtimeScreenRoomCodeIDTextBox);
+            this.panel3.Controls.Add(this.showtimeIDTextBox);
             this.panel3.Controls.Add(this.showtimeIDLabel);
             this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.dobTextBox);
+            this.panel3.Controls.Add(this.showtimeMovieIDTextBox);
             this.panel3.Controls.Add(this.dateTimeTextBox);
             this.panel3.Controls.Add(this.showtimeMovieIdLabel);
             this.panel3.Controls.Add(this.dateTimeLabel);
@@ -261,7 +261,7 @@
             // 
             this.ticketPriceTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ticketPriceTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ticketPriceTextBox.Location = new System.Drawing.Point(202, 115);
+            this.ticketPriceTextBox.Location = new System.Drawing.Point(199, 115);
             this.ticketPriceTextBox.Name = "ticketPriceTextBox";
             this.ticketPriceTextBox.Size = new System.Drawing.Size(100, 20);
             this.ticketPriceTextBox.TabIndex = 93;
@@ -270,7 +270,7 @@
             // 
             this.ticketPriceLabel.AutoSize = true;
             this.ticketPriceLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ticketPriceLabel.Location = new System.Drawing.Point(132, 118);
+            this.ticketPriceLabel.Location = new System.Drawing.Point(129, 118);
             this.ticketPriceLabel.Name = "ticketPriceLabel";
             this.ticketPriceLabel.Size = new System.Drawing.Size(64, 13);
             this.ticketPriceLabel.TabIndex = 92;
@@ -285,24 +285,25 @@
             this.showtimeListBox.Name = "showtimeListBox";
             this.showtimeListBox.Size = new System.Drawing.Size(120, 173);
             this.showtimeListBox.TabIndex = 80;
+            this.showtimeListBox.SelectedIndexChanged += new System.EventHandler(this.showtimeListBox_SelectedIndexChanged);
             // 
-            // showtimeScreenRoomCodeID
+            // showtimeScreenRoomCodeIDTextBox
             // 
-            this.showtimeScreenRoomCodeID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.showtimeScreenRoomCodeID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.showtimeScreenRoomCodeID.Location = new System.Drawing.Point(249, 88);
-            this.showtimeScreenRoomCodeID.Name = "showtimeScreenRoomCodeID";
-            this.showtimeScreenRoomCodeID.Size = new System.Drawing.Size(91, 20);
-            this.showtimeScreenRoomCodeID.TabIndex = 91;
+            this.showtimeScreenRoomCodeIDTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.showtimeScreenRoomCodeIDTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.showtimeScreenRoomCodeIDTextBox.Location = new System.Drawing.Point(249, 88);
+            this.showtimeScreenRoomCodeIDTextBox.Name = "showtimeScreenRoomCodeIDTextBox";
+            this.showtimeScreenRoomCodeIDTextBox.Size = new System.Drawing.Size(91, 20);
+            this.showtimeScreenRoomCodeIDTextBox.TabIndex = 91;
             // 
-            // memberIDTextBox
+            // showtimeIDTextBox
             // 
-            this.memberIDTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.memberIDTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.memberIDTextBox.Location = new System.Drawing.Point(202, 9);
-            this.memberIDTextBox.Name = "memberIDTextBox";
-            this.memberIDTextBox.Size = new System.Drawing.Size(100, 20);
-            this.memberIDTextBox.TabIndex = 79;
+            this.showtimeIDTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.showtimeIDTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.showtimeIDTextBox.Location = new System.Drawing.Point(202, 9);
+            this.showtimeIDTextBox.Name = "showtimeIDTextBox";
+            this.showtimeIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.showtimeIDTextBox.TabIndex = 79;
             // 
             // showtimeIDLabel
             // 
@@ -326,14 +327,14 @@
             this.label16.TabIndex = 74;
             this.label16.Text = "Screening Room Code";
             // 
-            // dobTextBox
+            // showtimeMovieIDTextBox
             // 
-            this.dobTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dobTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dobTextBox.Location = new System.Drawing.Point(185, 61);
-            this.dobTextBox.Name = "dobTextBox";
-            this.dobTextBox.Size = new System.Drawing.Size(100, 20);
-            this.dobTextBox.TabIndex = 76;
+            this.showtimeMovieIDTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.showtimeMovieIDTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.showtimeMovieIDTextBox.Location = new System.Drawing.Point(185, 61);
+            this.showtimeMovieIDTextBox.Name = "showtimeMovieIDTextBox";
+            this.showtimeMovieIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.showtimeMovieIDTextBox.TabIndex = 76;
             // 
             // dateTimeTextBox
             // 
@@ -380,7 +381,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.screeningRoomPortal);
+            this.panel2.Controls.Add(this.screeningRoomListBox);
             this.panel2.Controls.Add(this.screeningRoomCodeTextBox);
             this.panel2.Controls.Add(this.screeningRoomCodeLabel);
             this.panel2.Controls.Add(this.capacityTextBox);
@@ -395,15 +396,16 @@
             this.panel2.Size = new System.Drawing.Size(325, 119);
             this.panel2.TabIndex = 105;
             // 
-            // screeningRoomPortal
+            // screeningRoomListBox
             // 
-            this.screeningRoomPortal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.screeningRoomPortal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.screeningRoomPortal.FormattingEnabled = true;
-            this.screeningRoomPortal.Location = new System.Drawing.Point(3, 3);
-            this.screeningRoomPortal.Name = "screeningRoomPortal";
-            this.screeningRoomPortal.Size = new System.Drawing.Size(120, 108);
-            this.screeningRoomPortal.TabIndex = 91;
+            this.screeningRoomListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.screeningRoomListBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.screeningRoomListBox.FormattingEnabled = true;
+            this.screeningRoomListBox.Location = new System.Drawing.Point(3, 3);
+            this.screeningRoomListBox.Name = "screeningRoomListBox";
+            this.screeningRoomListBox.Size = new System.Drawing.Size(120, 108);
+            this.screeningRoomListBox.TabIndex = 91;
+            this.screeningRoomListBox.SelectedIndexChanged += new System.EventHandler(this.screeningRoomListBox_SelectedIndexChanged);
             // 
             // screeningRoomCodeTextBox
             // 
@@ -547,6 +549,7 @@
             this.movieListBox.Name = "movieListBox";
             this.movieListBox.Size = new System.Drawing.Size(159, 225);
             this.movieListBox.TabIndex = 24;
+            this.movieListBox.SelectedIndexChanged += new System.EventHandler(this.movieListBox_SelectedIndexChanged);
             // 
             // addMovieButton
             // 
@@ -797,17 +800,17 @@
         private System.Windows.Forms.TextBox ticketPriceTextBox;
         private System.Windows.Forms.Label ticketPriceLabel;
         private System.Windows.Forms.ListBox showtimeListBox;
-        private System.Windows.Forms.TextBox showtimeScreenRoomCodeID;
-        private System.Windows.Forms.TextBox memberIDTextBox;
+        private System.Windows.Forms.TextBox showtimeScreenRoomCodeIDTextBox;
+        private System.Windows.Forms.TextBox showtimeIDTextBox;
         private System.Windows.Forms.Label showtimeIDLabel;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox dobTextBox;
+        private System.Windows.Forms.TextBox showtimeMovieIDTextBox;
         private System.Windows.Forms.TextBox dateTimeTextBox;
         private System.Windows.Forms.Label showtimeMovieIdLabel;
         private System.Windows.Forms.Label dateTimeLabel;
         private System.Windows.Forms.Label showtimeLabel;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ListBox screeningRoomPortal;
+        private System.Windows.Forms.ListBox screeningRoomListBox;
         private System.Windows.Forms.TextBox screeningRoomCodeTextBox;
         private System.Windows.Forms.Label screeningRoomCodeLabel;
         private System.Windows.Forms.TextBox capacityTextBox;

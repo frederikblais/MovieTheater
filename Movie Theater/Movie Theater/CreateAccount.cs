@@ -16,14 +16,27 @@ namespace Movie_Theater
 
         private const string DbServerHost = "localhost";
         private const string DbUsername = "postgres";
+        //private const string DbUsername = "username";
         private const string DbUuserPassword = "yvnft9k";
+        //private const string DbUuserPassword = "1013";
+        //private const string DbUuserPassword = "password";
         private const string DbName = "movietheaterdb";
+        //private const string DbName = "movietheater_db";
 
         NpgsqlConnection dbConnection;
 
         public CreateAccount()
         {
             InitializeComponent();
+
+            SetDBConnection(DbServerHost, DbUsername, DbUuserPassword, DbName);
+        }
+
+        private void SetDBConnection(string serverAddress, string username, string passwd, string dbName)
+        {
+            string connectionString = "Host=" + serverAddress + "; Username=" + username + "; Password=" + passwd + "; Database=" + dbName + ";";
+
+            dbConnection = new NpgsqlConnection(connectionString);
         }
 
         private NpgsqlConnection CreateDBConnection(string serverAddress, string username, string passwd, string dbName)
@@ -59,7 +72,7 @@ namespace Movie_Theater
 
             dbConnection1.Open();
 
-            string sqlQuery = "select * from movietheaterdb.movietheaterschema.user_account;";
+            string sqlQuery = "SELECT * FROM movietheaterschema.user_account;";
             Console.WriteLine("SQL Query: " + sqlQuery);
 
             //This is the actual SQL containing the query to be executed
