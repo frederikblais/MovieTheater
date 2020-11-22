@@ -146,3 +146,42 @@ C:\Users\le1770646\source\repos\MovieTheater\Movie Theater\Movie Theater\obj\Deb
 C:\Users\le1770646\source\repos\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.ManagerLogin.resources
 C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\bin\Debug\Movie Theater.xml
 C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.CreateManager.resources
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\Movie Theater.exe.config
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\Movie Theater.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\Movie Theater.exe
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\Movie Theater.pdb
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\Npgsql.dll
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Buffers.dll
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Memory.dll
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Text.Json.dll
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Threading.Channels.dll
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.ValueTuple.dll
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\Npgsql.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Buffers.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Memory.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Text.Json.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Threading.Channels.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\bin\Debug\System.ValueTuple.xml
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie Theater.csprojAssemblyReference.cache
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.ClientPortal.resources
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.CreateAccount.resources
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.CreateManager.resources
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.ManagerPortal.resources
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.Login.resources
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.ManagerLogin.resources
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.Properties.Resources.resources
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie Theater.csproj.GenerateResource.cache
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie Theater.csproj.CoreCompileInputs.cache
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie Theater.csproj.CopyComplete
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie Theater.exe
+C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie Theater.pdb
