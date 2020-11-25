@@ -71,7 +71,6 @@
             this.addMovieButton = new System.Windows.Forms.Button();
             this.movieIDTextBox = new System.Windows.Forms.TextBox();
             this.editMovieButton = new System.Windows.Forms.Button();
-            this.genreComboBox = new System.Windows.Forms.ComboBox();
             this.movieIDLabel = new System.Windows.Forms.Label();
             this.imagePathLabel = new System.Windows.Forms.Label();
             this.imageFilePathTextBox = new System.Windows.Forms.TextBox();
@@ -87,6 +86,7 @@
             this.lengthTextBox = new System.Windows.Forms.TextBox();
             this.movieLabel = new System.Windows.Forms.Label();
             this.addButton = new System.Windows.Forms.Button();
+            this.genreTextBox = new System.Windows.Forms.TextBox();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -518,11 +518,11 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.genreTextBox);
             this.panel1.Controls.Add(this.movieListBox);
             this.panel1.Controls.Add(this.addMovieButton);
             this.panel1.Controls.Add(this.movieIDTextBox);
             this.panel1.Controls.Add(this.editMovieButton);
-            this.panel1.Controls.Add(this.genreComboBox);
             this.panel1.Controls.Add(this.movieIDLabel);
             this.panel1.Controls.Add(this.imagePathLabel);
             this.panel1.Controls.Add(this.imageFilePathTextBox);
@@ -563,6 +563,7 @@
             this.addMovieButton.TabIndex = 76;
             this.addMovieButton.Text = "Add";
             this.addMovieButton.UseVisualStyleBackColor = false;
+            this.addMovieButton.Click += new System.EventHandler(this.addMovieButton_Click);
             // 
             // movieIDTextBox
             // 
@@ -585,16 +586,6 @@
             this.editMovieButton.TabIndex = 75;
             this.editMovieButton.Text = "Edit";
             this.editMovieButton.UseVisualStyleBackColor = false;
-            // 
-            // genreComboBox
-            // 
-            this.genreComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.genreComboBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.genreComboBox.FormattingEnabled = true;
-            this.genreComboBox.Location = new System.Drawing.Point(248, 36);
-            this.genreComboBox.Name = "genreComboBox";
-            this.genreComboBox.Size = new System.Drawing.Size(100, 21);
-            this.genreComboBox.TabIndex = 77;
             // 
             // movieIDLabel
             // 
@@ -680,6 +671,7 @@
             this.deleteMovieButton.TabIndex = 83;
             this.deleteMovieButton.Text = "Delete";
             this.deleteMovieButton.UseVisualStyleBackColor = false;
+            this.deleteMovieButton.Click += new System.EventHandler(this.deleteMovieButton_Click);
             // 
             // titleLabel
             // 
@@ -756,6 +748,16 @@
             this.addButton.Text = "Add Manager";
             this.addButton.UseVisualStyleBackColor = false;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // genreTextBox
+            // 
+            this.genreTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.genreTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genreTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.genreTextBox.Location = new System.Drawing.Point(248, 36);
+            this.genreTextBox.Name = "genreTextBox";
+            this.genreTextBox.Size = new System.Drawing.Size(100, 20);
+            this.genreTextBox.TabIndex = 91;
             // 
             // ManagerPortal
             // 
@@ -841,7 +843,6 @@
         private System.Windows.Forms.Button addMovieButton;
         private System.Windows.Forms.TextBox movieIDTextBox;
         private System.Windows.Forms.Button editMovieButton;
-        private System.Windows.Forms.ComboBox genreComboBox;
         private System.Windows.Forms.Label movieIDLabel;
         private System.Windows.Forms.Label imagePathLabel;
         private System.Windows.Forms.TextBox imageFilePathTextBox;
@@ -857,6 +858,7 @@
         private System.Windows.Forms.TextBox lengthTextBox;
         private System.Windows.Forms.Label movieLabel;
         private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.TextBox genreTextBox;
     }
 }
 

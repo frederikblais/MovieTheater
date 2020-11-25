@@ -303,8 +303,6 @@ namespace Movie_Theater
             //After executing the query(ies) in the db, the connection must be closed
             dbConnection.Close();
 
-            //genreComboBox.Items.Add(foundGenreList);
-
             return foundGenreList;
         }
 
@@ -395,7 +393,7 @@ namespace Movie_Theater
                 {
                     // Displays all info of selected movie in text boxes
                     movieIDTextBox.Text = foundMovieList[i].ID.ToString();
-                    genreComboBox.Items.Add(foundMovieList[i].Genre.ToString());
+                    genreTextBox.Text = foundMovieList[i].Genre.ToString();
                     titleTextBox.Text = foundMovieList[i].Title.ToString();
                     yearTextBox.Text = foundMovieList[i].Year.ToString();
                     lengthTextBox.Text = foundMovieList[i].Length.ToString();
@@ -443,6 +441,21 @@ namespace Movie_Theater
             }
         }
 
+        private void deleteMovie() 
+        {
+            // Takes selected item in listbox and reads as string
+            string selectedShowtime = showtimeListBox.SelectedItem.ToString();
+
+            /*
+            
+            TO BE CONTINUED ... 
+             
+             */
+        }
+
+
+
+
         private void addButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -450,6 +463,20 @@ namespace Movie_Theater
             CreateManager create = new CreateManager();
 
             create.Show();
+        }
+
+        private void addMovieButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            AddMovie movie = new AddMovie();
+
+            movie.Show();
+        }
+
+        private void deleteMovieButton_Click(object sender, EventArgs e)
+        {
+            deleteMovie();
         }
     }
 }

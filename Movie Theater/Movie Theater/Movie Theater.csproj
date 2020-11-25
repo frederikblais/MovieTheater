@@ -81,6 +81,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMovie.Designer.cs">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientPortal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     <Compile Include="ScreeningRoom.cs" />
     <Compile Include="Showtime.cs" />
     <Compile Include="UserAccount.cs" />
+    <EmbeddedResource Include="AddMovie.resx">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientPortal.resx">
       <DependentUpon>ClientPortal.cs</DependentUpon>
     </EmbeddedResource>
