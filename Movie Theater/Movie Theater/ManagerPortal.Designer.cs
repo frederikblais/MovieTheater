@@ -67,6 +67,7 @@
             this.addScreeningRoomButton = new System.Windows.Forms.Button();
             this.screeningRoomLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.genreTextBox = new System.Windows.Forms.TextBox();
             this.movieListBox = new System.Windows.Forms.ListBox();
             this.addMovieButton = new System.Windows.Forms.Button();
             this.movieIDTextBox = new System.Windows.Forms.TextBox();
@@ -86,7 +87,6 @@
             this.lengthTextBox = new System.Windows.Forms.TextBox();
             this.movieLabel = new System.Windows.Forms.Label();
             this.addButton = new System.Windows.Forms.Button();
-            this.genreTextBox = new System.Windows.Forms.TextBox();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -104,6 +104,7 @@
             this.logoutButton.TabIndex = 112;
             this.logoutButton.Text = "Logout";
             this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click_1);
             // 
             // panel5
             // 
@@ -541,6 +542,16 @@
             this.panel1.Size = new System.Drawing.Size(359, 244);
             this.panel1.TabIndex = 103;
             // 
+            // genreTextBox
+            // 
+            this.genreTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.genreTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genreTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.genreTextBox.Location = new System.Drawing.Point(248, 36);
+            this.genreTextBox.Name = "genreTextBox";
+            this.genreTextBox.Size = new System.Drawing.Size(100, 20);
+            this.genreTextBox.TabIndex = 91;
+            // 
             // movieListBox
             // 
             this.movieListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -748,16 +759,6 @@
             this.addButton.Text = "Add Manager";
             this.addButton.UseVisualStyleBackColor = false;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
-            // 
-            // genreTextBox
-            // 
-            this.genreTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.genreTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genreTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.genreTextBox.Location = new System.Drawing.Point(248, 36);
-            this.genreTextBox.Name = "genreTextBox";
-            this.genreTextBox.Size = new System.Drawing.Size(100, 20);
-            this.genreTextBox.TabIndex = 91;
             // 
             // ManagerPortal
             // 

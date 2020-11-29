@@ -371,14 +371,6 @@ namespace Movie_Theater
 
             return GenreList;
         }
-        private void LogoutButton_Click(object sender, EventArgs e)
-        {
-            Login login = new Login();
-
-            login.Show();
-
-            this.Close();
-        }
 
         private void movieListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -477,6 +469,15 @@ namespace Movie_Theater
         private void deleteMovieButton_Click(object sender, EventArgs e)
         {
             deleteMovie();
+        }
+
+        private void logoutButton_Click_1(object sender, EventArgs e)
+        {
+            Login login = new Login();
+
+            login.Show();
+
+            this.Close();
         }
     }
 }
