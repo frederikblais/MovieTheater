@@ -28,6 +28,8 @@ namespace Movie_Theater
             InitializeComponent();
 
             SetDBConnection(DbServerHost, DbUsername, DbUuserPassword, DbName);
+
+            this.ActiveControl = usernameTextBox;
         }
 
         private void SetDBConnection(string serverAddress, string username, string passwd, string dbName)
