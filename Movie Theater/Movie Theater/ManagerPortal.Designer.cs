@@ -597,6 +597,7 @@
             this.editMovieButton.TabIndex = 75;
             this.editMovieButton.Text = "Edit";
             this.editMovieButton.UseVisualStyleBackColor = false;
+            this.editMovieButton.Click += new System.EventHandler(this.editMovieButton_Click);
             // 
             // movieIDLabel
             // 

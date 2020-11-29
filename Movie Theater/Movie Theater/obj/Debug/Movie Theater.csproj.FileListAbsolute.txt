@@ -186,3 +186,4 @@ C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie
 C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie Theater.exe
 C:\Users\le1927627\OneDrive - Champlain Regional College\Desktop\FINAL OOP\Movie Theater\Movie Theater\obj\Debug\Movie Theater.pdb
 C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.AddMovie.resources
+C:\Users\Frederik Blais\Code\MovieTheater\Movie Theater\Movie Theater\obj\Debug\Movie_Theater.editForm.resources
