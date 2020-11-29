@@ -36,7 +36,7 @@ namespace Movie_Theater
 
             SetDBConnection(DbServerHost, DbUsername, DbUuserPassword, DbName);
 
-            
+            DisableMovieTB();
             GetMoviesFromDB();
             //GetGenresFromDB();
             GetScreeningRoomsFromDB();
@@ -106,6 +106,10 @@ namespace Movie_Theater
 
         private List<Movie> GetMoviesFromDB()
         {
+            foundMovieList.Clear();
+
+            movieListBox.Items.Clear();
+
             Movie currentMovie;
 
             // Before sending commands to the database, the connection must be opened
@@ -435,18 +439,38 @@ namespace Movie_Theater
 
         private void deleteMovie() 
         {
-            // Takes selected item in listbox and reads as string
-            string selectedShowtime = showtimeListBox.SelectedItem.ToString();
+            string id = movieIDTextBox.Text;
 
-            /*
-            
-            TO BE CONTINUED ... 
-             
-             */
+            // The following Connection, Command and DataReader objects will be used to access the jt_genre_movie table
+            NpgsqlConnection dbConnection1 = CreateDBConnection(DbServerHost, DbUsername, DbUuserPassword, DbName);
+            NpgsqlCommand dbCommand1;
+            NpgsqlDataReader dataReader1;
+
+            dbConnection1.Open();
+
+            //string sqlQuery = "DELETE FROM movietheaterschema.movie WHERE title = '" + id + "';";
+            string sqlQuery = "DELETE FROM movietheaterschema.movie WHERE movieid = '" + id + "';";
+
+            //This is the actual SQL containing the query to be executed
+            dbCommand1 = new NpgsqlCommand(sqlQuery, dbConnection1);
+
+            dataReader1 = dbCommand1.ExecuteReader();
+
+            dbConnection1.Close();
+
+            GetMoviesFromDB();
         }
 
-
-
+        private void DisableMovieTB()
+        {
+            movieIDTextBox.Enabled = false;
+            titleTextBox.Enabled = false;
+            genreTextBox.Enabled = false;
+            lengthTextBox.Enabled = false;
+            audienceRatingTextBox.Enabled = false;
+            yearTextBox.Enabled = false;
+            imageFilePathTextBox.Enabled = false;
+        }
 
         private void addButton_Click(object sender, EventArgs e)
         {
@@ -476,6 +500,15 @@ namespace Movie_Theater
             Login login = new Login();
 
             login.Show();
+
+            this.Close();
+        }
+
+        private void editMovieButton_Click(object sender, EventArgs e)
+        {
+            editForm edit = new editForm();
+
+            edit.Show();
 
             this.Close();
         }

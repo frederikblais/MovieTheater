@@ -106,6 +106,12 @@
       <DependentUpon>CreateManager.cs</DependentUpon>
     </Compile>
     <Compile Include="E-Ticket.cs" />
+    <Compile Include="editForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editForm.Designer.cs">
+      <DependentUpon>editForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Genre.cs" />
     <Compile Include="ManagerPortal.cs">
       <SubType>Form</SubType>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateManager.resx">
       <DependentUpon>CreateManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editForm.resx">
+      <DependentUpon>editForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerPortal.resx">
       <DependentUpon>ManagerPortal.cs</DependentUpon>
